@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .inputDivs{
+        display:flex;
+        background-color: ghostwhite;
+    }
+</style>
+
+<body>
+    <h1>Registrujte vas nalog</h1>
+    <p>Dobrodosli na HTML kurs molimo Vas da se registrujete</p>
+
+    <form>
+         Ime:<br>
+        <input type="text" name="ime" required placeholder="Ime" minlength="1"/><br/><br/>
+         
+        Prezime:<br>
+        <input type="text" name="prezime" placeholder="Prezime" disabled/><br/><br/>
+        
+        Zeljena lozinka:<br>
+        <input type="password" name="psw"  maxlength="8"><br/><br/>
+       
+        Email adresa:<br>
+        <input type="email" name="email" value="kica@gmail.com"><br/><br/>
+        
+        Profilna slika:<br>
+        <input type="file" name="slika"><br/><br/>
+        
+        Portfolio:<br>
+        <input type="url" name="sajt"><br/><br/>
+        
+        Godine:<br>
+        <input type="number" name="godine" min="0" max="150" size="8"/><br/><br/>         
+    <div class="inputDivs">
+        <div>
+        Pol:<br>
+            <input type="radio" name="gender" value="muski" checked> Muski<br>
+            <input type="radio" name="gender" value="zenski"> Zenski<br>
+            <input type="radio" name="gender" value="nisam_siguran"> Nisam siguran/na<br/><br/>
+        </div>
+        <div>
+        Posedujem vozacku kategorije:<br>
+            <input type="checkbox" name="d" value="d"> D<br>
+            <input type="checkbox" name="b" value="b" checked> B <br/>
+            <input type="checkbox" name="c" value="c" > C <br/>
+            <input type="checkbox" name="a" value="a"> A <br/>
+      </div>
+     </div>
+        
+        Ocekivana plata:<br>
+        <span>100e</span><input type="range" name="plata"/><span>10000e</span><br/><br/>
+        
+        Ocekivano radno vreme:<br>
+       <input type="time" name="radno_vreme"/><br/><br/>
+       <!-- Note: type="time" is not supported in Safari or Internet Explorer 12 and earlier versions. -->
+
+       Boja kose:
+        <input type="color" name="favcolor"><br/><br/>
+
+       Datum rodjenja:<br>
+        <input type="date" name="rodjendan"><br/><br/>
+
+        <input type="submit"  value="Submit"> <input type="reset" value="Ponisti">
+    </form>
+</body>
+</html>
